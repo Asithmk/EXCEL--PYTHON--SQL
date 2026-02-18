@@ -1,1 +1,1 @@
-# EXCEL--PYTHON--SQL
+Created a blank excel file with data of random students and imported the file into pandas and converted it into a pandas df, made all names simple,filed empty or impossible values with mean/median, mapped a categorial column to numbers, then used mysql connector to get into my local databse and inserted into a premade sql table 
