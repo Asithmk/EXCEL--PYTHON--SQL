@@ -1,48 +1,31 @@
-# 🎓 Student Data ETL & MySQL Integration
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+🎓 Student Data ETL & MySQL Integration
 
-## 📊 Project Overview
-This project demonstrates a complete data pipeline: generating a mock student dataset in Excel, performing deep cleaning and normalization in **Pandas**, and migrating the finalized data into a **MySQL Relational Database**.
+⚠️ This project is based on a forked repository. I extended and modified the original implementation by improving data processing and database handling.
 
----
+📊 Overview
+This project demonstrates an end-to-end ETL (Extract, Transform, Load) pipeline using Python, Pandas, and MySQL. It includes generating a mock student dataset, performing data cleaning and transformation, and loading the processed data into a relational database.
 
-## 🛠️ Data Pipeline Stages
+🛠️ My Contributions
 
-### 1. Data Extraction & Ingestion
-* **Source:** Created a custom Excel dataset containing randomized student information.
-* **Ingestion:** Utilized **Pandas** to import the `.xlsx` file and initialize a structured DataFrame.
+* Improved data cleaning logic for better consistency
+* Enhanced handling of missing and invalid values
+* Refactored parts of the ETL pipeline for readability
+* Worked on MySQL integration and data insertion process
 
+⚙️ Tech Stack
+Python • Pandas • MySQL • Excel
 
+📂 Structure
 
-### 2. Data Cleaning & Transformation (Wrangling)
-To ensure high data integrity, the following transformations were applied:
-* **String Normalization:** Simplified all student names for consistent formatting.
-* **Imputation:** Handled missing or "impossible" numerical values by calculating and applying the **Mean** or **Median** of the dataset.
-* **Feature Encoding:** Mapped categorical columns (strings) into numerical values to make the data machine-learning ready.
+* data/ – Raw Excel dataset
+* scripts/ – Data processing & ETL pipeline
+* database/ – SQL schema
 
-### 3. Database Loading (MySQL)
-* **Connectivity:** Established a secure connection to a local database instance using `mysql-connector-python`.
-* **Injection:** Iterated through the cleaned DataFrame to insert records into a pre-configured SQL table.
+🚀 Key Concepts
 
+* Data Cleaning & Transformation
+* ETL Pipeline Design
+* Relational Database Integration
 
-
----
-
-## 📂 Project Structure
-* `data/` - Contains the raw Excel source file.
-* `scripts/` - Python scripts for data cleaning and SQL migration.
-* `database/` - SQL schema files for the student table.
-
----
-
-## 🚀 Technical Requirements
-* **Python 3.x**
-* **Pandas** (`pip install pandas`)
-* **Openpyxl** (`pip install openpyxl`)
-* **MySQL Connector** (`pip install mysql-connector-python`)
-
----
-*Data Engineering & Database Management Project*
+📌 Note
+Original project by: https://github.com/nissank19/EXCEL--PYTHON--SQL
