@@ -1,9 +1,14 @@
-
+# Python
 __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Environment variables and secrets
 .env
+
+# macOS
 .DS_Store
 
+# Generated data
 data/students_cleaned.csv

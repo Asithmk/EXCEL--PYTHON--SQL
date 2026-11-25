@@ -1,3 +1,5 @@
 
 pandas
 openpyxl
+mysql-connector-python
+python-dotenv
