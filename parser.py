@@ -37,11 +37,15 @@ def extract_data():
             f"Excel file not found: {INPUT_FILE}"
         )
 
-    df = pd.read_excel(INPUT_FILE)
+   df = pd.read_excel(INPUT_FILE)
 
-    # Remove unnecessary spaces from column names
-    df.columns = df.columns.str.strip()
+# Clean and standardise column names
+df.columns = df.columns.str.strip()
 
+# Rename Excel column to match the pipeline
+df = df.rename(columns={
+    "Student ID": "Student_ID"
+})
     missing_columns = [
         column for column in REQUIRED_COLUMNS
         if column not in df.columns
